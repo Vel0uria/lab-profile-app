@@ -1,0 +1,12 @@
+<h2>Empleados</h2>
+
+{{#each users as |empleado|}}
+<p>{{empleado.username}} </p>
+<P>{{empleado.role}}</P>
+<a href="/admin/employees/{{_id}}/delete">DELETE </a> {{/each}}
+
+{{#if err}}
+<p>
+  {{err}}
+</p>
+{{/if}}
